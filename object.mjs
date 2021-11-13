@@ -1,16 +1,22 @@
 import { output } from './output.mjs';
-const elAmount = 10*1000*1000;
-const objects = new Array(elAmount).fill({ name: 'a', surname: 'b' });
-const tuples = new Array(elAmount).fill(['a', 'b']);
 
-// objects
+const numParams = 1000000;
+const array = new Array(numParams).fill({});
+const object = {};
+array.forEach((_, i) => {
+	object[`prop${i}`] = Math.floor(Math.random() * numParams);
+});
+
+// for of
 const t0 = performance.now();
-const obj0 = objects.map((o) => ({ a: o.name, b: o.surname }));
+for (const prop in object) {};
 const t1 = performance.now();
-output(objects.length, 'object enum', `${t1-t0}`);
+output(array.length, 'Object for of', `${t1-t0}`);
 
-// tuples
+// Object.entries
 const t2 = performance.now();
-const tup0 = tuples.map((o) => ({ a: o[0], b: o[1] }));
+Object.entries(object).forEach(_ => {});
 const t3 = performance.now();
-output(tuples.length, 'tuple enum', `${t3-t2}`);
+output(array.length, 'Object.entries forEach', `${t3-t2}`);
+
+

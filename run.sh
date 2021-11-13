@@ -7,6 +7,7 @@ prefix_md_list() {
 }
 
 prefix_md_list "$(node array.mjs)"
+prefix_md_list "$(node mapping.mjs)"
 prefix_md_list "$(node object.mjs)"
 
 
