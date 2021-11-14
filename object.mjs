@@ -7,11 +7,13 @@ array.forEach((_, i) => {
 	object[`prop${i}`] = Math.floor(Math.random() * numParams);
 });
 
-// for of
+// for in
 const t0 = performance.now();
-for (const prop in object) {};
+for (const prop in object) {
+	if(object.hasOwnProperty()) {};
+};
 const t1 = performance.now();
-output(array.length, 'Object for of', `${t1-t0}`);
+output(array.length, 'Object for in', `${t1-t0}`);
 
 // Object.entries
 const t2 = performance.now();
