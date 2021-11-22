@@ -1,4 +1,4 @@
-import { output } from './output.mjs';
+import { output } from '../output.mjs';
 
 const numParams = 1000000;
 const array = new Array(numParams).fill({});
