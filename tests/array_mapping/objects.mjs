@@ -8,9 +8,3 @@ const t0 = performance.now();
 const obj0 = objects.map((o) => ({ a: o.name, b: o.surname }));
 const t1 = performance.now();
 output(objects.length, 'object enum', `${t1-t0}`);
-
-// tuples
-const t2 = performance.now();
-const tup0 = tuples.map((o) => ({ a: o[0], b: o[1] }));
-const t3 = performance.now();
-output(tuples.length, 'tuple enum', `${t3-t2}`);
