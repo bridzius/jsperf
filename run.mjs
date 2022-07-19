@@ -5,7 +5,7 @@ import { join } from 'path';
 
 const TEST_DIR = 'tests';
 
-stdout.write(`| NodeJS version: ${version} ||||\n| ----- | ----- | ----- | ----- |\n`);
+stdout.write(`| **NodeJS version: ${version}** ||||\n`);
 
 const testdirs = readdirSync(TEST_DIR, { withFileTypes: true }).filter(dir => dir.isDirectory()).map(dir => dir.name);
 const tests = testdirs.reduce((acc, dir) => [...acc, ...readdirSync(join(TEST_DIR, dir)).map(test => join(dir, test))], []);

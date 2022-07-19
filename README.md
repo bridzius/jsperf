@@ -1,7 +1,8 @@
 # jsperf - JavaScript performance metrics for different versions of NodeJS
 
-| NodeJS version: v18.4.0 ||||
-| ----- | ----- | ----- | ----- |
+| Title | Item amount | Test label | Time (seconds) |
+| ----- | ----------- | ---------- | -------------- |
+| **NodeJS version: v18.4.0** ||||
 | **tests/array_copy/array_from.mjs** | [0.1 million items] | {Array.from} | 2.0865219980478287 |
 | **tests/array_copy/array_push.mjs** | [0.1 million items] | {Array.push} | 53.10018799453974 |
 | **tests/array_loops/for.mjs** | [10 million items] | {for loop} | 27.989689998328686 |
@@ -12,8 +13,7 @@
 | **tests/object_values/for_in.mjs** | [1 million items] | {Object for in} | 499.88756699860096 |
 | **tests/object_values/entries.mjs** | [1 million items] | {Object.entries forEach} | 1551.281782001257 |
 | **tests/array_copy/array_rest.mjs** | [0.1 million items] | {Array rest parameters} | 59796.62404499948 |
-| NodeJS version: v17.9.1 ||||
-| ----- | ----- | ----- | ----- |
+| **NodeJS version: v17.9.1** ||||
 | **tests/array_copy/array_from.mjs** | [0.1 million items] | {Array.from} | 2.2606690004467964 |
 | **tests/array_copy/array_push.mjs** | [0.1 million items] | {Array.push} | 9.948223002254963 |
 | **tests/array_loops/for.mjs** | [10 million items] | {for loop} | 8.178215995430946 |
@@ -24,8 +24,7 @@
 | **tests/object_values/for_in.mjs** | [1 million items] | {Object for in} | 735.720178000629 |
 | **tests/object_values/entries.mjs** | [1 million items] | {Object.entries forEach} | 1832.3682560026646 |
 | **tests/array_copy/array_rest.mjs** | [0.1 million items] | {Array rest parameters} | 57758.79608800262 |
-| NodeJS version: v16.16.0 ||||
-| ----- | ----- | ----- | ----- |
+| **NodeJS version: v16.16.0** ||||
 | **tests/array_copy/array_from.mjs** | [0.1 million items] | {Array.from} | 1.425257995724678 |
 | **tests/array_copy/array_push.mjs** | [0.1 million items] | {Array.push} | 10.647883996367455 |
 | **tests/array_loops/for.mjs** | [10 million items] | {for loop} | 16.99670200049877 |
